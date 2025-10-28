@@ -1,0 +1,91 @@
+{
+  "name": "HeroComponent",
+  "displayName": "Hero Section",
+  "description": "A customizable hero section with title, subtitle, CTA button, and optional image or background",
+  "category": "Hero",
+  "version": "1.0.0",
+  "schema": {
+    "title": {
+      "type": "text",
+      "label": "Title",
+      "default": "Welcome to Our Website",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "label": "Subtitle",
+      "default": "Build amazing websites without code",
+      "required": true
+    },
+    "buttonText": {
+      "type": "text",
+      "label": "Button Text",
+      "default": "Get Started",
+      "required": false
+    },
+    "buttonLink": {
+      "type": "url",
+      "label": "Button Link",
+      "default": "#",
+      "required": false
+    },
+    "showButton": {
+      "type": "boolean",
+      "label": "Show Button",
+      "default": true,
+      "required": false
+    },
+    "showImage": {
+      "type": "boolean",
+      "label": "Show Side Image",
+      "default": false,
+      "required": false
+    },
+    "imageUrl": {
+      "type": "image",
+      "label": "Side Image",
+      "default": "",
+      "required": false,
+      "description": "Image to display beside the content"
+    },
+    "advanced": {
+      "type": "advanced",
+      "label": "Advanced Settings",
+      "schema": {
+        "backgroundColor": {
+          "type": "color",
+          "label": "Background Color",
+          "default": "#1e3a8a",
+          "required": false
+        },
+        "textColor": {
+          "type": "color",
+          "label": "Text Color",
+          "default": "#ffffff",
+          "required": false
+        },
+        "backgroundImage": {
+          "type": "image",
+          "label": "Background Image",
+          "default": "",
+          "required": false,
+          "description": "Full-width background image (overrides background color)"
+        },
+        "imagePosition": {
+          "type": "select",
+          "label": "Image Position",
+          "default": "right",
+          "required": false,
+          "options": ["left", "right"],
+          "description": "Position of the side image"
+        },
+        "imageAlt": {
+          "type": "text",
+          "label": "Image Alt Text",
+          "default": "Hero Image",
+          "required": false
+        }
+      }
+    }
+  }
+}

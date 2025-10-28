@@ -1,0 +1,41 @@
+{
+  "componentId": "product-grid-001",
+  "name": "Product Grid",
+  "schema": {
+    "title": {
+      "type": "text",
+      "default": "Our Products",
+      "editable": true,
+      "label": "Section Title",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "default": "Discover our amazing collection",
+      "editable": true,
+      "label": "Subtitle",
+      "required": false
+    },
+    "backgroundColor": {
+      "type": "color",
+      "default": "#f3f4f6",
+      "editable": true,
+      "label": "Background Color",
+      "required": true
+    },
+    "showPrice": {
+      "type": "boolean",
+      "default": true,
+      "editable": true,
+      "label": "Show Product Prices",
+      "required": true
+    },
+    "columns": {
+      "type": "number",
+      "default": 3,
+      "editable": true,
+      "label": "Number of Columns",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "componentId": "hero-001",
+  "name": "Hero Section",
+  "schema": {
+    "title": {
+      "type": "text",
+      "default": "Welcome to Our Website",
+      "editable": true,
+      "label": "Main Heading",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "default": "Build amazing experiences",
+      "editable": true,
+      "label": "Subtitle",
+      "required": false
+    },
+    "ctaText": {
+      "type": "text",
+      "default": "Get Started",
+      "editable": true,
+      "label": "Button Text",
+      "required": true
+    },
+    "ctaLink": {
+      "type": "url",
+      "default": "#",
+      "editable": true,
+      "label": "Button Link",
+      "required": true
+    },
+    "backgroundImage": {
+      "type": "image",
+      "default": "",
+      "editable": true,
+      "label": "Background Image URL",
+      "required": false
+    },
+    "backgroundColor": {
+      "type": "color",
+      "default": "#1e40af",
+      "editable": true,
+      "label": "Background Color",
+      "required": true
+    }
+  }
+}

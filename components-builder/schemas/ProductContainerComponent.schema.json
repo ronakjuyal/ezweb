@@ -1,0 +1,125 @@
+{
+  "name": "ProductContainerComponent",
+  "displayName": "Product Container",
+  "description": "Display all products with advanced filtering, sorting, and shopping features",
+  "category": "E-commerce",
+  "version": "1.0.0",
+  "schema": {
+    "title": {
+      "type": "text",
+      "label": "Section Title",
+      "default": "Our Products",
+      "required": true,
+      "description": "Main heading for the products section"
+    },
+  "subtitle": {
+    "type": "text",
+    "label": "Subtitle",
+    "default": "Discover our amazing collection",
+    "required": false,
+    "description": "Subtitle or tagline below the title"
+  },
+  "layout": {
+    "type": "select",
+    "label": "Layout Style",
+    "options": ["grid", "masonry"],
+    "default": "grid",
+    "required": true,
+    "description": "Choose between grid or masonry layout"
+  },
+  "columns": {
+    "type": "select",
+    "label": "Number of Columns",
+    "options": [2, 3, 4],
+    "default": 3,
+    "required": true,
+    "description": "Number of product columns (on desktop)"
+  },
+  "cardStyle": {
+    "type": "select",
+    "label": "Card Style",
+    "options": ["elevated", "bordered", "minimal"],
+    "default": "elevated",
+    "required": true,
+    "description": "Visual style of product cards"
+  },
+  "hoverEffect": {
+    "type": "select",
+    "label": "Hover Effect",
+    "options": ["lift", "zoom", "shadow"],
+    "default": "lift",
+    "required": true,
+    "description": "Animation when hovering over cards"
+  },
+  "showQuickView": {
+    "type": "boolean",
+    "label": "Show Quick View Button",
+    "default": true,
+    "required": false,
+    "description": "Display quick view overlay on product images"
+  },
+  "showAddToCart": {
+    "type": "boolean",
+    "label": "Show Add to Cart Button",
+    "default": true,
+    "required": false,
+    "description": "Display add to cart button on products"
+  },
+  "categoryFilter": {
+    "type": "text",
+    "label": "Category Filter",
+    "default": "all",
+    "required": false,
+    "description": "Filter by category ID or 'all' for all products"
+  },
+  "sortBy": {
+    "type": "select",
+    "label": "Sort Products By",
+    "options": ["newest", "price-low", "price-high", "name"],
+    "default": "newest",
+    "required": true,
+    "description": "Default sorting for products"
+  },
+  "animationDelay": {
+    "type": "number",
+    "label": "Animation Delay (ms)",
+    "default": 100,
+    "required": false,
+    "description": "Delay between each card animation in milliseconds"
+  },
+  "advanced": {
+    "type": "advanced",
+    "label": "Advanced Styling",
+    "schema": {
+      "backgroundColor": {
+        "type": "color",
+        "label": "Background Color",
+        "default": "#f8fafc",
+        "required": false,
+        "description": "Section background color"
+      },
+      "titleColor": {
+        "type": "color",
+        "label": "Title Color",
+        "default": "#1e293b",
+        "required": false,
+        "description": "Color of the section title"
+      },
+      "cardBgColor": {
+        "type": "color",
+        "label": "Card Background Color",
+        "default": "#ffffff",
+        "required": false,
+        "description": "Background color of product cards"
+      },
+      "accentColor": {
+        "type": "color",
+        "label": "Accent Color",
+        "default": "#3b82f6",
+        "required": false,
+        "description": "Color for buttons and highlights"
+      }
+    }
+  }
+  }
+}

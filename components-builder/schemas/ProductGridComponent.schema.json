@@ -1,0 +1,69 @@
+{
+  "name": "ProductGridComponent",
+  "displayName": "Product Grid",
+  "description": "A grid component that displays products from your product database",
+  "category": "Product",
+  "version": "1.0.0",
+  "schema": {
+    "sectionTitle": {
+      "type": "text",
+      "label": "Section Title",
+      "default": "Our Products",
+      "required": false
+    },
+    "sectionSubtitle": {
+      "type": "text",
+      "label": "Section Subtitle",
+      "default": "Browse our amazing collection",
+      "required": false
+    },
+    "productsPerRow": {
+      "type": "number",
+      "label": "Products Per Row",
+      "default": 3,
+      "required": false
+    },
+    "showAddToCart": {
+      "type": "boolean",
+      "label": "Show Add to Cart Button",
+      "default": true,
+      "required": false
+    },
+    "advanced": {
+      "type": "advanced",
+      "label": "Advanced Settings",
+      "schema": {
+        "backgroundColor": {
+          "type": "color",
+          "label": "Background Color",
+          "default": "#ffffff",
+          "required": false
+        },
+        "cardBackgroundColor": {
+          "type": "color",
+          "label": "Card Background Color",
+          "default": "#f9f9f9",
+          "required": false
+        },
+        "textColor": {
+          "type": "color",
+          "label": "Text Color",
+          "default": "#000000",
+          "required": false
+        },
+        "cardBorderRadius": {
+          "type": "number",
+          "label": "Card Border Radius (px)",
+          "default": 8,
+          "required": false
+        },
+        "spacing": {
+          "type": "number",
+          "label": "Grid Spacing (px)",
+          "default": 16,
+          "required": false
+        }
+      }
+    }
+  }
+}

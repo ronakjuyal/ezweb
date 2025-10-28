@@ -1,0 +1,160 @@
+{
+  "name": "CarouselComponent",
+  "displayName": "Image Carousel",
+  "description": "Advanced image slider with multiple transition effects, auto-play, and customizable controls",
+  "category": "Media",
+  "version": "1.0.0",
+  "schema": {
+    "carouselImages": {
+      "type": "multi-images",
+      "label": "Carousel Images",
+      "maxImages": 10,
+      "required": true,
+      "description": "Upload images for the carousel (recommended: 1920x1080px)"
+    },
+  "autoPlay": {
+    "type": "boolean",
+    "label": "Auto Play",
+    "default": true,
+    "required": false,
+    "description": "Automatically cycle through slides"
+  },
+  "autoPlayInterval": {
+    "type": "number",
+    "label": "Auto Play Interval (ms)",
+    "default": 5000,
+    "required": false,
+    "description": "Time between slide transitions in milliseconds"
+  },
+  "transitionEffect": {
+    "type": "select",
+    "label": "Transition Effect",
+    "options": ["slide", "fade", "zoom", "cube"],
+    "default": "slide",
+    "required": true,
+    "description": "Animation style when changing slides"
+  },
+  "height": {
+    "type": "select",
+    "label": "Carousel Height",
+    "options": ["small", "medium", "large", "fullscreen"],
+    "default": "medium",
+    "required": true,
+    "description": "Height of the carousel container"
+  },
+  "showDots": {
+    "type": "boolean",
+    "label": "Show Dots Indicator",
+    "default": true,
+    "required": false,
+    "description": "Display navigation dots at the bottom"
+  },
+  "showArrows": {
+    "type": "boolean",
+    "label": "Show Navigation Arrows",
+    "default": true,
+    "required": false,
+    "description": "Display previous/next arrows"
+  },
+  "showThumbnails": {
+    "type": "boolean",
+    "label": "Show Thumbnails",
+    "default": false,
+    "required": false,
+    "description": "Display thumbnail preview below carousel"
+  },
+  "pauseOnHover": {
+    "type": "boolean",
+    "label": "Pause on Hover",
+    "default": true,
+    "required": false,
+    "description": "Pause auto-play when hovering over carousel"
+  },
+  "enableSwipe": {
+    "type": "boolean",
+    "label": "Enable Touch Swipe",
+    "default": true,
+    "required": false,
+    "description": "Allow touch/swipe navigation on mobile"
+  },
+  "advanced": {
+    "type": "advanced",
+    "label": "Advanced Settings",
+    "schema": {
+      "kenBurnsEffect": {
+        "type": "boolean",
+        "label": "Ken Burns Effect",
+        "default": false,
+        "required": false,
+        "description": "Slow zoom and pan animation on images"
+      },
+      "parallaxEffect": {
+        "type": "boolean",
+        "label": "Parallax Effect",
+        "default": false,
+        "required": false,
+        "description": "Subtle parallax movement on hover"
+      },
+      "overlayOpacity": {
+        "type": "number",
+        "label": "Overlay Opacity",
+        "default": 0.3,
+        "required": false,
+        "description": "Darkness of the image overlay (0-1)"
+      },
+      "borderRadius": {
+        "type": "select",
+        "label": "Border Radius",
+        "options": ["none", "sm", "md", "lg", "xl", "full"],
+        "default": "lg",
+        "required": false,
+        "description": "Corner rounding of the carousel"
+      },
+      "arrowStyle": {
+        "type": "select",
+        "label": "Arrow Style",
+        "options": ["circle", "square", "minimal"],
+        "default": "circle",
+        "required": false,
+        "description": "Style of navigation arrows"
+      },
+      "dotStyle": {
+        "type": "select",
+        "label": "Dot Style",
+        "options": ["dot", "line", "square"],
+        "default": "dot",
+        "required": false,
+        "description": "Style of navigation dots"
+      },
+      "backgroundColor": {
+        "type": "color",
+        "label": "Background Color",
+        "default": "#000000",
+        "required": false,
+        "description": "Background color of the carousel container"
+      },
+      "arrowColor": {
+        "type": "color",
+        "label": "Arrow Color",
+        "default": "#ffffff",
+        "required": false,
+        "description": "Color of navigation arrows"
+      },
+      "dotColor": {
+        "type": "color",
+        "label": "Dot Color",
+        "default": "#ffffff",
+        "required": false,
+        "description": "Color of inactive dots"
+      },
+      "activeDotColor": {
+        "type": "color",
+        "label": "Active Dot Color",
+        "default": "#3b82f6",
+        "required": false,
+        "description": "Color of the active dot"
+      }
+    }
+  }
+  }
+}

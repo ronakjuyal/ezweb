@@ -1,0 +1,55 @@
+{
+  "componentId": "contact-001",
+  "name": "Contact Section",
+  "schema": {
+    "title": {
+      "type": "text",
+      "default": "Get In Touch",
+      "editable": true,
+      "label": "Section Title",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "default": "We'd love to hear from you",
+      "editable": true,
+      "label": "Subtitle",
+      "required": false
+    },
+    "email": {
+      "type": "text",
+      "default": "contact@example.com",
+      "editable": true,
+      "label": "Contact Email",
+      "required": true
+    },
+    "phone": {
+      "type": "text",
+      "default": "+1 (555) 123-4567",
+      "editable": true,
+      "label": "Phone Number",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "default": "123 Main St, City, State 12345",
+      "editable": true,
+      "label": "Physical Address",
+      "required": true
+    },
+    "backgroundColor": {
+      "type": "color",
+      "default": "#ffffff",
+      "editable": true,
+      "label": "Background Color",
+      "required": true
+    },
+    "textColor": {
+      "type": "color",
+      "default": "#1f2937",
+      "editable": true,
+      "label": "Text Color",
+      "required": true
+    }
+  }
+}
