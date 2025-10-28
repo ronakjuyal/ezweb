@@ -1,3 +1,9 @@
+# Claude Code
+.claude/
+
+# Git files
+.gitignore
+
 # Dependencies
 node_modules/
 **/node_modules/
